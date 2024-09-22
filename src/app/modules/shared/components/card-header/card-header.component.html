@@ -5,8 +5,8 @@
     <span class="text-xs font-regular text-gray-400">February 2023</span>
   </div>
   <section class="flex flex-1 justify-end">
-    <button class="bg-white hover:bg-blue-700 text-white font-bold rounded-full w-12 h-12 flex items-center justify-center">
-      <img src="assets/svg/plus.svg" alt="Plus icon" class="w-6 h-6">
+    <button [ngClass]="[ buttonStyle.bgColor === 'white' ? 'bg-white' : 'bg-black' ]" class="bg-white hover:bg-blue-700 text-white font-bold rounded-full w-12 h-12 flex items-center justify-center">
+      <svg-plus-icon [color]="buttonStyle.color" width="20px" height="20px" viewBox="0 0 20 20" />
     </button>
   </section>
 </section>

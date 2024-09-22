@@ -1,0 +1,14 @@
+<section class="h-[600px] bg-[#111D27] flex flex-col gap-5">
+  <section>
+    <img (click)="goBack()" class="px-[30px] py-[18px]" src="assets/svg/arrow-left.png" alt="arrow-left">
+  </section>
+
+  <section #imagenBanner class="flex justify-center items-center">
+    <img src="assets/images/jujuto-kaisen.png" alt="">
+  </section>
+</section>
+<section>
+  <div class="px-[30px] py-[18px]">
+    <app-card-header [buttonStyle]="buttonStyle" />
+  </div>
+</section>

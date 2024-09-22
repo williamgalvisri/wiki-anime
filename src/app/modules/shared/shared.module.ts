@@ -3,14 +3,16 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CardComponent } from './components/card/card.component';
 import { CardHeaderComponent } from './components/card-header/card-header.component';
+import { PlusIconComponent } from './components/svgs/plus/plus.component';
 
 
 
 @NgModule({
   declarations: [NavbarComponent, CardComponent, CardHeaderComponent],
-  exports: [NavbarComponent, CardComponent],
+  exports: [NavbarComponent, CardComponent, CardHeaderComponent, PlusIconComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    PlusIconComponent
   ]
 })
 export class SharedModule { }
